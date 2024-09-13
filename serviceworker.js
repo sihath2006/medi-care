@@ -9,8 +9,7 @@ const URLs_TO_CACHE = [
   '/medi-care/index.html',
   '/medi-care/css/index.css',
   '/medi-care/css/common.css',
-  '/medi-care/js/index.js',
-  '/medi-care/resourses/logo.jpg'
+  '/medi-care/js/index.js'
 ];
 
 // Install event
