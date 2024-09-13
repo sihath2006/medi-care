@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+<link rel="manifest" href="./icon/site.webmanifest">
+</head>
+<body>
+    <!-- Navigation Bar -->
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div class="logo">
+        <img src="./Images/logo2.png" alt="Medihub" class="logosize">
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home Page</a></li>
+        <li><a href="./About us and contact.html">About Us & Contact</a></li>
+        <li><a href="./Services.html">Services</a></li>
+        <li><a href="./Doctors.html">Doctors</a></li>
+        <li><a href="./Consulting Reservation.html">Consulting Reservation</a></li>
+        <li><a href="./Pharmacy.html">Pharmacy</a></li>
+        <li><a href="./Patient Registration.html">Patient Registration</a></li>
+    </ul>
+
+
+
+
+    
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+    <!-- Pharmacy Section -->
+    <section class="pharmacy-section">
+        <div class="container">
+            <h2>Our Available Medicine</h2>
+            <!-- Products Section - flexbox -->
+       <!-- Product box container -->
+       <div class="product-container">
+
+        <!-- box -->
+        <div class="product-box">
+          <img src="Images/med1.png" alt="Nexium">
+          <b>Nexium</b>
+          <span class="price">750.00 LKR</span>
+
+          <!-- adding the cart button -->
+          <a href="order.html" class="cart-button">
+          <p class="p">Add to Cart</p>
+          </a>
+        </div>
+
+        <div class="product-box">
+          <img src="Images/med2.jpeg" alt="Paracetamol">
+          <b>Paracetamol</b>
+          <span class="price">480.00 LKR</span>
+
+          <!-- adding the cart button -->
+          <a href="order.html" class="cart-button">
+          <p class="p">Add to Cart</p>
+          </a>
+        </div>
+
+        <div class="product-box">
+          <img src="Images/med3.png" alt="Anemidox">
+          <b>Anemidox</b>
+          <span class="price">840.00 LKR</span>
+
+          <!-- adding the cart button -->
+          <a href="order.html" class="cart-button">
+          <p class="p">Add to Cart</p>
+          </a>
+        </div>
+
+        <div class="product-box">
+          <img src="Images/med4.jpeg" alt="Demerol">
+          <b>Demerol</b>
+          <span class="price">990.00 LKR</span>
+
+          <!-- adding the cart button -->
+          <a href="order.html" class="cart-button">
+          <p class="p">Add to Cart</p>
+          </a>
+        </div>
+
+        <div class="product-box">
+          <img src="Images/med5.jpg" alt="Asprin">
+          <b>Asprin</b>
+          <span class="price">720.00 LKR</span>
+
+          <!-- adding the cart button -->
+          <a href="order.html" class="cart-button">
+          <p class="p">Add to Cart</p>
+          </a>
+        </div>
+
+        <div class="product-box">
+          <img src="Images/med6.webp" alt="Digeplex">
+          <b>Digeplex</b>
+          <span class="quantity">1KG</span>
+          <span class="price">880.00 LKR</span>
+
+          <!-- adding the cart button -->
+          <a href="order.html" class="cart-button">
+          <p class="p">Add to Cart</p>
+          </a>
+        </div>
+      </div>
+       </section>
+
+            </div>
+
+            <h2>Order your medicine by filling out this form.</h2>
+
+            <form action="#" method="post" class="pharmacy-form">
+                <div class="form-row">
+                    <div class="form-column">
+                        <h3>Customer Information</h3>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+
+                        <label for="contact-number">Contact Number:</label>
+                        <input type="tel" id="contact-number" name="contact-number" required>
+
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+
+                        <h3>Medicine Selection</h3>
+                        <label for="medicine-name">Medicine Name:</label>
+                        <select id="medicine-name" name="medicine-name" required>
+                            <option value="medicine1">Medicine 1</option>
+                            <option value="medicine2">Medicine 2</option>
+                            <option value="medicine3">Medicine 3</option>
+                            <option value="medicine4">Medicine 4</option>
+                        </select>
+
+                        <label for="quantity">Quantity:</label>
+                        <select id="quantity" name="quantity" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                        <label for="prescription">Prescription Upload (Optional):</label>
+                        <input type="file" id="prescription" name="prescription">
+                    </div>
+
+                    <div class="form-column">
+                        <h3>Order Details</h3>
+                        <label for="delivery-date">Preferred Delivery/Pick-up Date:</label>
+                        <input type="date" id="delivery-date" name="delivery-date" required>
+
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                        </select>
+
+                        <label for="notes">Any additional notes or special instructions:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>
+                        Medicare is dedicated to providing top-notch healthcare services with state-of-the-art facilities and a team of experienced medical professionals.
+                    </p>
+                </div>
+        
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About us and contact.html">About us and contact us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Doctors.html">Doctors</a></li>
+                        <li><a href="Consulting Reservation.html">Consulting</a></li>
+                        <li><a href="Pharmacy.html">Pharmacy</a></li>
+                        <li><a href="Patient Registration.html">Patient Registration</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>© 2024 Medicare. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

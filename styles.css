@@ -1,0 +1,1590 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #a5d2ee;
+
+}
+
+/* Basic styles for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    position: relative;
+}
+
+.logo img {
+    height: 100px; /* Default logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+.appointment-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.appointment-btn:hover {
+    background-color: #45a049;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .appointment-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+
+    .product-box{
+        grid-template-columns: 1fr;
+        }
+}
+
+
+/* Main Image Section */
+.main-image-section {
+    text-align: center;
+    color: white;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.motto {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.motto h1 {
+    font-size: 48px;
+}
+
+.motto p {
+    font-size: 24px;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    background-color: #eaf7ff;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.service-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box {
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-box ul {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.service-box ul li {
+    padding: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.our-doctors {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.doctors-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    background-color: #b5d5f6;
+
+}
+/* Bullet Point List Styling */
+.bullet-list-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.bullet-list-section h2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.6;
+}
+
+.bullet-list li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.doc-title{
+    text-align: center;
+}
+
+.doctor-box {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding the hover animation */
+    
+    transform: scale(0.9); /* Smaller size initially */
+    animation: popUp 0.5s forwards; /* Animation that will make it pop up */
+}
+/* Numbered List Styling */
+.numbered-list-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.numbered-list-section h2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.numbered-list {
+    list-style-type: decimal;
+    padding-left: 40px;
+    line-height: 1.6;
+}
+
+.numbered-list li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Image inside the box */
+.doctor-box img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Hover effect */
+.doctor-box:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+/* Patient Testimonials Section */
+.testimonials {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.testimonial-box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box p {
+    font-size: 18px;
+    color: #555;
+}
+
+.testimonial-box span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Latest News & Events Section */
+.news-events {
+    background-color: #c3f1f6;
+    padding: 50px 20px;
+
+}
+
+.news-events h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.news-section {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.news-item {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles for Mobile Devices */
+/* For mobile phones */
+
+
+#homepage
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+
+
+.appointment-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.appointment-btn:hover {
+    background-color: #45a049;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Branches Section */
+.branches {
+    background-color: #eaf7ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.branches h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.branches-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Added gap for consistent spacing between branches */
+}
+
+.branch {
+    width: 45%; /* Two branches per row on larger screens */
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branch img {
+    width: 100%;
+    height: 50vh; /* Maintain aspect ratio, but use 'vh' for relative height */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.branch-map {
+    width: 100%; /* Make maps responsive */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+
+/* Summary Table Section */
+.summary-table {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+}
+
+.summary-table h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: lightskyblue;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles for Mobile */
+@media only screen and (max-width: 768px) {
+
+    .branches-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branch {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+#Aboutusandcontact
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    width: 90%;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 80px;
+}
+
+.appointment-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.appointment-btn:hover {
+    background-color: #45a049;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: rgb(156, 213, 248);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #fff;
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for pop-up effect */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image styling */
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Service Title */
+.service h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* You can change this color to match your theme */
+    margin-top: 15px;
+}
+
+/* Service Description */
+.service p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Pop-up effect when hovered */
+.service:hover {
+    transform: scale(1.05); /* Enlarges the container by 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds more shadow depth */
+}
+
+/* Optional pop-up text on hover */
+.service::before {
+    content: 'Click to Learn More';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevents interaction with the pop-up text */
+    z-index: 1;
+}
+
+
+.registration-link {
+    margin-top: 30px;
+}
+
+.btn{
+    background-color: #26ba50;
+    border: #26ba50;
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.registration-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.registration-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Styles for Mobile */
+@media only screen and (max-width: 768px) {
+
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .news-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        
+        
+    }
+
+    .news-item {
+        width: 100%;
+
+    }
+}
+#services
+
+
+
+/* Doctors Section */
+.doctors-section {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.doctors-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.doctors-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctor-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    padding: 20px;
+    text-align: center;
+}
+
+.doctor-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.doctor-box h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.doctor-box p {
+    font-size: 18px;
+    color: #666;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #4caf50;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+.doctors-summary {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+.doctors-summary p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#doctors
+
+
+
+/* Reservation Form Section */
+.reservation-section {
+    background-color: #f2f5f5;
+    padding: 50px 20px;
+}
+
+.reservation-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.reservation-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.form-column h3 {
+    font-size: 20px;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-column {
+        width: 100%;
+    }
+}
+#consultinres
+
+
+
+/* Pharmacy Section */
+.pharmacy-section {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+}
+
+.pharmacy-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.medicine-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.medicine-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.medicine-item img {
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*icumi*/
+#popular-product{
+    display: grid;
+    grid-template-columns: column;
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+
+  .product-heading{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-heading, .h3-2{
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: #202020;
+    letter-spacing: 0.5px;
+  }
+
+
+  #popular-product{
+    margin: 80px auto;
+  }
+
+  .product-container{
+    display: grid;
+    grid-gap: 30px;
+    margin: 40px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product-box{
+    width: 90%;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    padding:20px;
+    border-radius: 20px;
+    display: grid;
+   
+    position: relative;
+    transition: 0.5s ease-in;
+    }
+
+    .product-box:hover{
+      transform: scale(1.02);
+    }
+
+  .product-box img{
+    width: 90%;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+  }
+
+  .product-box b{
+    color: #202020;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .product-box .quantity{
+    color: #393838;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  .product-box .price{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #393939;
+    text-align: left;
+  }
+
+  .product-box .cart-button {
+    width: 100%;
+    height: 40px;
+    background-color: #e5f9e9;
+    color: #05380c;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .product-box .cart-button:hover{
+    background-color: #faf9e4;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  .p{
+    color:#052d0b;
+  }
+
+/* Pharmacy Form */
+.pharmacy-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.form-column h3 {
+    font-size: 20px;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-column {
+        width: 100%;
+    }
+
+    .medicine-item {
+        width: 45%;
+    }
+
+    .product-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .medicine-item {
+        width: 100%;
+    }
+}
+
+
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header Styling */
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .appointment-btn {
+    background-color: #0056b3;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .appointment-btn {
+    background-color: #0056b3;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #fdfdfd;
+    padding: 15px 0;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+header .appointment-btn {
+    background-color: #4caf50;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Registration Form Section */
+.registration-form {
+    padding: 50px 20px;
+    background-color: #a5d2ee;
+    margin: 20px 0;
+}
+
+.registration-form h2 {
+    color: #4bad53;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.regtxt{
+    color: #05380c;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-section {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #26ba50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #75c0e5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-content ul li {
+    margin: 0 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-section {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content ul {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #8cc1fa;
+    color: white;
+    padding: 40px 0;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Social Media Styling */
+.footer-section.social ul {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.footer-section.social ul li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #0056b3;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+

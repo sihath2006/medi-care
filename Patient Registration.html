@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+<link rel="manifest" href="./icon/site.webmanifest">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./Images/logo2.png" alt="Medihub" class="logosize">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home Page</a></li>
+            <li><a href="./About us and contact.html">About Us & Contact</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Doctors.html">Doctors</a></li>
+            <li><a href="./Consulting Reservation.html">Consulting Reservation</a></li>
+            <li><a href="./Pharmacy.html">Pharmacy</a></li>
+            <li><a href="./Patient Registration.html">Patient Registration</a></li>
+        </ul>
+
+
+
+
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- Patient Registration Form -->
+    <section class="registration-form">
+        <div class="form-container">
+            <h2 class="regtxt">Register Here</h2>
+            <form action="#" method="POST">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                    
+                    <label for="address">Address (Optional):</label>
+                    <textarea id="address" name="address"></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h3>Emergency Contact</h3>
+                    <label for="emergency_name">Full Name:</label>
+                    <input type="text" id="emergency_name" name="emergency_name" required>
+
+                    <label for="relationship">Relationship with Patient:</label>
+                    <input type="text" id="relationship" name="relationship" required>
+
+                    <label for="emergency_contact">Contact Number:</label>
+                    <input type="tel" id="emergency_contact" name="emergency_contact" required>
+                </div>
+
+                <div class="form-section">
+                    <h3>Medical Information</h3>
+                    <label for="conditions">Existing Medical Conditions:</label>
+                    <textarea id="conditions" name="conditions"></textarea>
+
+                    <label for="allergies">Allergies:</label>
+                    <textarea id="allergies" name="allergies"></textarea>
+
+                    <label for="medications">Current Medications:</label>
+                    <textarea id="medications" name="medications"></textarea>
+
+                    <label for="physician">Primary Care Physician (Optional):</label>
+                    <input type="text" id="physician" name="physician">
+                </div>
+
+                <div class="form-section">
+                    <h3>Terms and Conditions</h3>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required> 
+                        I agree to the hospital's Terms and Conditions and consent to receive medical treatment and care from this facility.
+                    </label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>
+                        Medicare is dedicated to providing top-notch healthcare services with state-of-the-art facilities and a team of experienced medical professionals.
+                    </p>
+                </div>
+        
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About us and contact.html">About us andContact Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Doctors.html">Doctors</a></li>
+                        <li><a href="Consulting Reservation.html">Consulting</a></li>
+                        <li><a href="Pharmacy.html">Pharmacy</a></li>
+                        <li><a href="Patient Registration.html"> patient-Registration</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>© 2024 Medicare. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
