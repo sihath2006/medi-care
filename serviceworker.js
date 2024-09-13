@@ -7,9 +7,8 @@ const CACHE_NAME = 'my-cache-v1';
 const URLs_TO_CACHE = [
   '/medi-care/',
   '/medi-care/index.html',
-  '/medi-care/css/index.css',
-  '/medi-care/css/common.css',
-  '/medi-care/js/index.js'
+  '/medi-care/styles.css',
+  '/medi-care/main.js'
 ];
 
 // Install event
