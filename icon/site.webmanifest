@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "version1",
+    "short_name": "app1",
+    "start_url": "/medi-care/index.html",
     "icons": [
         {
             "src": "/medi-care/icon/android-chrome-192x192.png",
