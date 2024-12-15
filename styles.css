@@ -543,7 +543,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     padding: 12px;
     text-align: left;
 }
@@ -1031,7 +1031,7 @@ button[type="submit"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*icumi*/
+/*grid*/
 #popular-product{
     display: grid;
     grid-template-columns: column;

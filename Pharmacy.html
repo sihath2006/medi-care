@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
@@ -38,185 +39,402 @@
     </div>
 </nav>
 
-    <!-- Pharmacy Section -->
-    <section class="pharmacy-section">
-        <div class="container">
-            <h2>Our Available Medicine</h2>
-            <!-- Products Section - flexbox -->
-       <!-- Product box container -->
-       <div class="product-container">
-
-        <!-- box -->
-        <div class="product-box">
-          <img src="Images/med1.png" alt="Nexium">
-          <b>Nexium</b>
-          <span class="price">750.00 LKR</span>
-
-          <!-- adding the cart button -->
-          <a href="order.html" class="cart-button">
-          <p class="p">Add to Cart</p>
-          </a>
-        </div>
-
-        <div class="product-box">
-          <img src="Images/med2.jpeg" alt="Paracetamol">
-          <b>Paracetamol</b>
-          <span class="price">480.00 LKR</span>
-
-          <!-- adding the cart button -->
-          <a href="order.html" class="cart-button">
-          <p class="p">Add to Cart</p>
-          </a>
-        </div>
-
-        <div class="product-box">
-          <img src="Images/med3.png" alt="Anemidox">
-          <b>Anemidox</b>
-          <span class="price">840.00 LKR</span>
-
-          <!-- adding the cart button -->
-          <a href="order.html" class="cart-button">
-          <p class="p">Add to Cart</p>
-          </a>
-        </div>
-
-        <div class="product-box">
-          <img src="Images/med4.jpeg" alt="Demerol">
-          <b>Demerol</b>
-          <span class="price">990.00 LKR</span>
-
-          <!-- adding the cart button -->
-          <a href="order.html" class="cart-button">
-          <p class="p">Add to Cart</p>
-          </a>
-        </div>
-
-        <div class="product-box">
-          <img src="Images/med5.jpg" alt="Asprin">
-          <b>Asprin</b>
-          <span class="price">720.00 LKR</span>
-
-          <!-- adding the cart button -->
-          <a href="order.html" class="cart-button">
-          <p class="p">Add to Cart</p>
-          </a>
-        </div>
-
-        <div class="product-box">
-          <img src="Images/med6.webp" alt="Digeplex">
-          <b>Digeplex</b>
-          <span class="quantity">1KG</span>
-          <span class="price">880.00 LKR</span>
-
-          <!-- adding the cart button -->
-          <a href="order.html" class="cart-button">
-          <p class="p">Add to Cart</p>
-          </a>
-        </div>
-      </div>
-       </section>
-
-            </div>
-
-            <h2>Order your medicine by filling out this form.</h2>
-
-            <form action="#" method="post" class="pharmacy-form">
-                <div class="form-row">
-                    <div class="form-column">
-                        <h3>Customer Information</h3>
-                        <label for="full-name">Full Name:</label>
-                        <input type="text" id="full-name" name="full-name" required>
-
-                        <label for="contact-number">Contact Number:</label>
-                        <input type="tel" id="contact-number" name="contact-number" required>
-
-                        <label for="address">Address:</label>
-                        <textarea id="address" name="address" rows="3" required></textarea>
-
-                        <h3>Medicine Selection</h3>
-                        <label for="medicine-name">Medicine Name:</label>
-                        <select id="medicine-name" name="medicine-name" required>
-                            <option value="medicine1">Medicine 1</option>
-                            <option value="medicine2">Medicine 2</option>
-                            <option value="medicine3">Medicine 3</option>
-                            <option value="medicine4">Medicine 4</option>
-                        </select>
-
-                        <label for="quantity">Quantity:</label>
-                        <select id="quantity" name="quantity" required>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-
-                        <label for="prescription">Prescription Upload (Optional):</label>
-                        <input type="file" id="prescription" name="prescription">
+     <!-- Pharmacy Page -->
+     <main class="pharmacy-page">
+        <h1>Pharmacy</h1>
+        <div class="category">
+            <h2>Analgesics</h2>
+            <div class="medicine-container">
+                <div class="medicine-box">
+                    <img src="Aspadol.png" alt="Aspadol"  height="50">
+                    <p>Aspadol</p>
+                    <p>Price : Rs.500</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
                     </div>
-
-                    <div class="form-column">
-                        <h3>Order Details</h3>
-                        <label for="delivery-date">Preferred Delivery/Pick-up Date:</label>
-                        <input type="date" id="delivery-date" name="delivery-date" required>
-
-                        <label for="payment-method">Payment Method:</label>
-                        <select id="payment-method" name="payment-method" required>
-                            <option value="credit-card">Credit Card</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="bank-transfer">Bank Transfer</option>
-                        </select>
-
-                        <label for="notes">Any additional notes or special instructions:</label>
-                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    <br>
+                    <button>Add to Cart</button>
+                
+                </div>
+                <div class="medicine-box">
+                    <img src="Bayer2.avif" alt="Medicine" height="50">
+                    <p>Bayer</p>
+                    <p>Price : Rs.78</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
                     </div>
+                    <br>
+                    <button>Add to Cart</button>
                 </div>
-
-                <div class="form-submit">
-                    <button type="submit">Submit</button>
+                <div class="medicine-box">
+                    <img src="Kinal.webp" alt="Medicine"  height="50">
+                    <p>Kinal</p>
+                    <p>Price : Rs.345</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                    <button>Add to Cart</button>
                 </div>
-            </form>
+                <div class="medicine-box">
+                    <img src="Motrin.webp" alt="Medicine" height="50">
+                    <p>Motrin</p>
+                    <p>Price : Rs.304</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="medicine-box">
+                    <img src="Polaramine.webp" alt="Medicine" height="50">
+                    <p>Polaramine</p>
+                    <p>Price : Rs.307</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="medicine-box">
+                    <img src="Tylenol.webp" alt="Medicine" height="50">
+                    <p>Tylenol</p>
+                    <p>Price : Rs.456</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+                
+            </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-section about">
-                    <h2>About Us</h2>
-                    <p>
-                        Medicare is dedicated to providing top-notch healthcare services with state-of-the-art facilities and a team of experienced medical professionals.
-                    </p>
-                </div>
         
-                <div class="footer-section links">
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About us and contact.html">About us and contact us</a></li>
-                        <li><a href="Services.html">Services</a></li>
-                        <li><a href="Doctors.html">Doctors</a></li>
-                        <li><a href="Consulting Reservation.html">Consulting</a></li>
-                        <li><a href="Pharmacy.html">Pharmacy</a></li>
-                        <li><a href="Patient Registration.html">Patient Registration</a></li>
-                    </ul>
-                </div>
-        
-                <div class="footer-section social">
-                    <h2>Follow Us</h2>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
+        <div class="category">
+            <h2>Antibiotics</h2>
+            <div class="medicine-container">
+                <div class="medicine-container">
+                    <div class="medicine-box">
+                        <img src="AZEETOP11.webp" alt="Medicine" height="50">
+                        <p>AZEETOP</p>
+                        <p>Price : Rs.876</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="AZICIP11.jpg" alt="Medicine" height="50">
+                        <p>AZICIP</p>
+                        <p>Price : Rs.900</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">Qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Azithromycin11.webp" alt="Medicine" height="50">
+                        <p>Azithromycin</p>
+                        <p>Price : Rs.982</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="ERYTHROCIN11.webp" alt="Medicine" height="50">
+                        <p>ERYTHROCIN</p>
+                        <p>Price : Rs.123</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="C-Axil11.jpg" alt="Medicine" height="50">
+                        <p>C-Axil11</p>
+                        <p>Price : Rs.720</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Cefuroxime11.jpg" alt="Medicine" height="50">
+                        <p>Cefuroxime</p>
+                        <p>Price : Rs.621</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
             </div>
+        </div>
         
-            <div class="footer-bottom">
-                <p>© 2024 Medicare. All Rights Reserved.</p>
+        <div class="category">
+            <h2>Antidepressants</h2>
+            <div class="medicine-container">
+                <div class="medicine-container">
+                    <div class="medicine-box">
+                        <img src="Antidepresents22.png" alt="Medicine" height="50">
+                        <p>Antidepresents</p>
+                        <p>Price : Rs.324</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Auvenlity22.png" alt="Medicine" height="50">
+                        <p>Auvenlity</p>
+                        <p>Price : Rs.399</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Fluoxentine22.webp" alt="Medicine" height="50">
+                        <p>Fluoxentine</p>
+                        <p>Price : Rs.456</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Luvox22.png" alt="Medicine" height="50">
+                        <p>Luvox</p>
+                        <p>Price : Rs.256</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Benzodiazepine22.jpeg" alt="Medicine" height="50">
+                        <p>Benzodiazepine</p>
+                        <p>Price : Rs.254</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Blevo22.webp" alt="Medicine" height="50">
+                        <p>Blevo</p>
+                        <p>Price : Rs.378</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
             </div>
-        </footer>
-    </footer>
-    <script src="./main.js"></script>
+        </div>
+        
+        <div class="category">
+            <h2>Antihistamines</h2>
+            <div class="medicine-container">
+                <div class="medicine-container">
+                    <div class="medicine-box">
+                        <img src="Benadryl33.jpg" alt="Medicine" height="50">
+                        <p>Benadryl</p>
+                        <p>Price : Rs.306</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Claritin33.webp" alt="Medicine" height="50">
+                        <p>Claritin</p>
+                        <p>Price : Rs.258</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Equate33.jpg" alt="Medicine" height="50">
+                        <p>Equate</p>
+                        <p>Price : Rs.129</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Piriton33.jpg" alt="Medicine" height="50">
+                        <p>Piriton</p>
+                        <p>Price : Rs.785</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Reactine33.jpg" alt="Medicine" height="50">
+                        <p>Reactine</p>
+                        <p>Price : Rs.300</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Telfast33.jpg" alt="Medicine" height="50">
+                        <p>Telfast</p>
+                        <p>Price : Rs.325</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>Antihypertensives</h2>
+            <div class="medicine-container">
+                <div class="medicine-container">
+                    <div class="medicine-box">
+                        <img src="Cilnidipine44.jpg" alt="Medicine" height="50">
+                        <p>Cilnidipine</p>
+                        <p>Price : Rs.586</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Lisinopril44.webp" alt="Medicine" height="50">
+                        <p>Lisinopril</p>
+                        <p>Price : Rs.345</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Lodipine44.jpg" alt="Medicine" height="50">
+                        <p>Lodipine</p>
+                        <p>Price : Rs.30</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Nifedipine44.jpg" alt="Medicine" height="50">
+                        <p>Nifedipine</p>
+                        <p>Price : Rs.307</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Telmisatart44.webp" alt="Medicine" height="50">
+                        <p>Telmisatart</p>
+                        <p>Price : Rs.304</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="medicine-box">
+                        <img src="Dv-Losartn44.jpg" alt="Medicine" height="50">
+                        <p>Dv-Losartn</p>
+                        <p>Price : Rs.355</p>
+                    <div class="quantity-input">
+                        <label for="quantity4">qty:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                    <br>
+                        <button>Add to Cart</button>
+                    </div>
+            </div>
+        </div>
+    </main>
 </body>
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <h2 class="text-center">Your Cart</h2>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will be dynamically added here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total-price">$0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <button id="buy-now-btn" onclick="proceedToOrder()">Buy Now</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
 </html>

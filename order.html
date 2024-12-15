@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Summary</h1>
+    <table id="order-summary-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order summary items will be dynamically added -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="order-total-price"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Personal Details</h2>
+    <form id="order-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" required></textarea>
+        <br>
+        <label for="payment">Payment Details:</label>
+        <input type="text" id="payment" placeholder="Card Number" required>
+        <br>
+        <button type="button" id="save-favourites-btn">Add to Favourites</button>
+        <button type="button" id="apply-favourites-btn">Apply Favourites</button>
+        <br>
+        <br>
+        <button type="submit">Pay</button>
+    </form>
+
+    <script src="./order.js"></script>
+</body>
+</html>
